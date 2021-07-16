@@ -1,0 +1,57 @@
+form {
+  margin-top: 15vh;
+}
+
+form .App__InputContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 4px;
+  background-color: #454569;
+  border: 1px solid transparent;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  width: 80%;
+  margin: 0 auto;
+}
+
+form .App__InputContainer input {
+  outline: 0;
+  height: 3em;
+  width: 100%;
+  padding-right: 10px;
+  border-radius: 4px;
+  border: none;
+  background-color: #454569;
+  color: white;
+  font-size: 1.1em;
+}
+
+form .App__InputContainer span {
+  color: white;
+  padding: 1em;
+  font-size: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0.5;
+  text-align: center;
+}
+
+form .App__InputContainer span svg {
+  margin: -2px 0;
+}
+
+form .App__InputContainer:focus-within {
+  border: 2px solid #6666a0;
+  outline: 0;
+  -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.384);
+          box-shadow: 0 0 10px rgba(255, 255, 255, 0.384);
+}
+/*# sourceMappingURL=SearchBar.css.map */

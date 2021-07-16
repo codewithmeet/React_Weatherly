@@ -1,0 +1,289 @@
+.App__WeatherCardWrapper {
+  min-width: 100%;
+  width: auto;
+  margin: 1.5em 0;
+}
+
+.App__WeatherCardWrapper .App__WeatherCardContainer {
+  margin: 0 auto;
+  max-width: 50%;
+  min-height: 100%;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1em 2em;
+  border-radius: 5px;
+  background-color: #454569;
+}
+
+@media (max-width: 764px) {
+  .App__WeatherCardWrapper .App__WeatherCardContainer {
+    max-width: 70%;
+  }
+}
+
+.App__WeatherCardWrapper .App__WeatherCardContainer hr {
+  background-color: #74748a;
+  opacity: 0.5;
+  border: 0;
+  height: 2px;
+  width: 100%;
+  border-radius: 100px;
+}
+
+.App__WeatherCardWrapper .App__WeatherCardContainer .App__WeatherCardMainSection {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 764px) {
+  .App__WeatherCardWrapper .App__WeatherCardContainer .App__WeatherCardMainSection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.App__WeatherCardWrapper .App__WeatherCardContainer .App__WeatherCardMainSection .App__WeatherCardIconContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.App__WeatherCardWrapper .App__WeatherCardContainer .App__WeatherCardMainSection .App__WeatherCardIconContainer img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 8em;
+  margin-right: 20px;
+}
+
+@media (max-width: 764px) {
+  .App__WeatherCardWrapper .App__WeatherCardContainer .App__WeatherCardMainSection .App__WeatherCardIconContainer img {
+    margin: 0;
+  }
+}
+
+.App__WeatherCardWrapper .App__WeatherCardContainer .App__WeatherCardMainSection .App__WeatherCardIconContainer h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.App__WeatherCardWrapper .App__WeatherCardContainer .App__WeatherCardMainSection .App__WeatherCardIconContainer h2 span {
+  opacity: 0.5;
+  font-size: 0.5em;
+}
+
+@media (max-width: 764px) {
+  .App__WeatherCardWrapper .App__WeatherCardContainer .App__WeatherCardMainSection .App__WeatherCardIconContainer h2 {
+    margin: 0.6em 0;
+  }
+}
+
+@media (max-width: 764px) {
+  .App__WeatherCardWrapper .App__WeatherCardContainer .App__WeatherCardMainSection .App__WeatherCardIconContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.App__WeatherCardWrapper .App__WeatherCardContainer .App__WeatherCardMainSection .App__WeatherCardCityContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.App__WeatherCardWrapper .App__WeatherCardContainer .App__WeatherCardMainSection .App__WeatherCardCityContainer .App__WeatherCardCity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.App__WeatherCardWrapper .App__WeatherCardContainer .App__WeatherCardMainSection .App__WeatherCardCityContainer .App__WeatherCardCity h2 {
+  color: #fff;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 0 auto;
+}
+
+@media (max-width: 764px) {
+  .App__WeatherCardWrapper .App__WeatherCardContainer .App__WeatherCardMainSection .App__WeatherCardCityContainer .App__WeatherCardCity h2 {
+    margin: 0 0 10px 0;
+  }
+}
+
+.App__WeatherCardWrapper .App__WeatherCardContainer .App__WeatherCardMainSection .App__WeatherCardCityContainer p {
+  margin: 0 0;
+  color: #fff;
+  text-align: end;
+  font-size: 0.6em;
+  font-weight: 500;
+}
+
+.App__WeatherCardWrapper .App__WeatherCardContainer .App__WeatherCardMainSection .App__WeatherCardCityContainer h5 {
+  margin: 0;
+  color: #fff;
+}
+
+@media (max-width: 764px) {
+  .App__WeatherCardWrapper .App__WeatherCardContainer .App__WeatherCardMainSection .App__WeatherCardCityContainer {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .App__WeatherCardWrapper .App__WeatherCardContainer .App__WeatherCardMainSection .App__WeatherCardCityContainer h2 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .App__WeatherCardWrapper .App__WeatherCardContainer .App__WeatherCardMainSection .App__WeatherCardCityContainer p {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+.App__WeatherCardWrapper .App__WeatherCardContainer .App__WeatherCardInfoSection {
+  width: 100%;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media (max-width: 764px) {
+  .App__WeatherCardWrapper .App__WeatherCardContainer .App__WeatherCardInfoSection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.App__WeatherCardWrapper .App__WeatherCardContainer .App__WeatherCardInfoSection .App__WeatherCardInfoSectionRow {
+  max-width: 100%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (max-width: 764px) {
+  .App__WeatherCardWrapper .App__WeatherCardContainer .App__WeatherCardInfoSection .App__WeatherCardInfoSectionRow {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.App__WeatherCardWrapper .App__WeatherCardContainer .App__WeatherCardInfoSection .App__WeatherCardInfoSectionRow .App__WeatherCardInfoCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1em 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  padding: 1em;
+}
+
+.App__WeatherCardWrapper .App__WeatherCardContainer .App__WeatherCardInfoSection .App__WeatherCardInfoSectionRow .App__WeatherCardInfoCard p {
+  margin: 0 0.6em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-weight: 500;
+}
+
+.App__WeatherCardWrapper .App__WeatherCardContainer .App__WeatherCardInfoSection .App__WeatherCardInfoSectionRow .App__WeatherCardInfoCard p span {
+  font-weight: 300;
+}
+
+.App__WeatherCardWrapper .App__WeatherCardContainer .App__WeatherCardInfoSection .App__WeatherCardInfoSectionRow .App__WeatherCardInfoCard:hover {
+  -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.384);
+          box-shadow: 0 0 10px rgba(255, 255, 255, 0.384);
+}
+/*# sourceMappingURL=WeatherCard.css.map */

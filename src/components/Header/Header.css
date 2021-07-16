@@ -1,0 +1,89 @@
+.App__HeaderWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  top: 0;
+  z-index: 99999;
+  min-width: 100%;
+  min-height: 10vh;
+  margin: 0 0 10vh 0;
+  background-color: #454569;
+  color: white;
+}
+
+.App__HeaderWrapper .App__HeaderContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 80%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 764px) {
+  .App__HeaderWrapper .App__HeaderContainer {
+    padding: 0 0.8em;
+    width: 100%;
+  }
+}
+
+.App__HeaderWrapper .App__HeaderContainer h2 {
+  font-size: 1.2em;
+}
+
+.App__HeaderWrapper .App__HeaderContainer h2 span {
+  color: #7ba7c3;
+}
+
+.App__HeaderWrapper .App__HeaderContainer .App__HeaderItems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.App__HeaderWrapper .App__HeaderContainer .App__HeaderItems p {
+  font-weight: bold;
+}
+
+@media (max-width: 764px) {
+  .App__HeaderWrapper .App__HeaderContainer .App__HeaderItems p {
+    font-size: 0.7em;
+  }
+}
+
+.App__HeaderWrapper .App__HeaderContainer .App__HeaderItems button {
+  border: 0;
+  margin: 10px;
+  font-weight: 700;
+  color: #454569;
+  padding: 8px 8px;
+  background-color: cyan;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+
+.App__HeaderWrapper .App__HeaderContainer .App__HeaderItems button:focus-visible {
+  outline: 0;
+}
+
+.App__HeaderWrapper .App__HeaderContainer .App__HeaderItems button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+/*# sourceMappingURL=Header.css.map */

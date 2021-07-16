@@ -1,0 +1,158 @@
+@import "../../mixins/responsiveMixins";
+
+.App__WeatherCardWrapper {
+  min-width: 100%;
+  width: auto;
+  margin: 1.5em 0;
+  .App__WeatherCardContainer {
+    margin: 0 auto;
+    max-width: 50%;
+    min-height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1em 2em;
+    border-radius: 5px;
+    background-color: #454569;
+    @include for-phone-only {
+      max-width: 70%;
+    }
+    hr {
+      background-color: #74748a;
+      opacity: 0.5;
+      border: 0;
+      height: 2px;
+      width: 100%;
+      border-radius: 100px;
+    }
+    .App__WeatherCardMainSection {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @include for-phone-only {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .App__WeatherCardIconContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          object-fit: contain;
+          width: 8em;
+          margin-right: 20px;
+          @include for-phone-only {
+            margin: 0;
+          }
+        }
+
+        h2 {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          color: white;
+          span {
+            opacity: 0.5;
+            font-size: 0.5em;
+          }
+          @include for-phone-only {
+            margin: 0.6em 0;
+          }
+        }
+        @include for-phone-only {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+      .App__WeatherCardCityContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+
+        .App__WeatherCardCity {
+          display: flex;
+          align-items: center;
+          color: #fff;
+          justify-content: center;
+          h2 {
+            color: #fff;
+            align-self: center;
+            margin: 0 auto;
+            @include for-phone-only {
+              margin: 0 0 10px 0;
+            }
+          }
+        }
+
+        p {
+          margin: 0 0;
+          color: #fff;
+          text-align: end;
+          font-size: 0.6em;
+          font-weight: 500;
+        }
+        h5 {
+          margin: 0;
+          color: #fff;
+        }
+        @include for-phone-only {
+          align-items: center;
+          h2 {
+            order: 1;
+          }
+          p {
+            order: 2;
+          }
+        }
+      }
+    }
+
+    .App__WeatherCardInfoSection {
+      width: 100%;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      @include for-phone-only {
+        flex-direction: column;
+      }
+      .App__WeatherCardInfoSectionRow {
+        max-width: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        @include for-phone-only {
+          width: 100%;
+          flex-direction: column;
+          flex-wrap: wrap;
+        }
+        .App__WeatherCardInfoCard {
+          display: flex;
+          margin: 1em 0;
+          align-items: center;
+          justify-content: center;
+          border-radius: 5px;
+          transition: all 0.3s ease-in-out;
+          padding: 1em;
+          p {
+            margin: 0 0.6em;
+            display: flex;
+            flex-direction: column;
+            font-weight: 500;
+            span {
+              font-weight: 300;
+            }
+          }
+          &:hover {
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.384);
+          }
+        }
+      }
+    }
+  }
+}

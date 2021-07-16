@@ -1,0 +1,32 @@
+@import "../../mixins/responsiveMixins";
+
+.App__HeaderWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  z-index: 99999;
+  min-width: 100%;
+  min-height: 10vh;
+  margin: 0 0 10vh 0;
+  background-color: #454569;
+  color: white;
+  .App__HeaderContainer {
+    min-width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include for-phone-only {
+      padding: 0 0.8em;
+      width: 100%;
+    }
+
+    h2 {
+      font-size: 1.2em;
+      span {
+        color: #7ba7c3;
+      }
+    }
+  }
+}
